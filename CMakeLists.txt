@@ -58,3 +58,6 @@ target_link_libraries(solution_07_range_max PRIVATE algorithms)
 
 add_executable(solution_08_dynamic_communities solutions/08-dynamic-communities/main.c)
 target_link_libraries(solution_08_dynamic_communities PRIVATE algorithms)
+
+add_executable(algorithmic_thinking_bench benchmarks/benchmarks.c)
+target_link_libraries(algorithmic_thinking_bench PRIVATE algorithms)
