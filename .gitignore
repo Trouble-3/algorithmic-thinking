@@ -1,0 +1,9 @@
+build/
+*.o
+*.out
+*.exe
+algorithmic_thinking_tests
+algorithmic_thinking_demo
+.DS_Store
+.vscode/
+.idea/
