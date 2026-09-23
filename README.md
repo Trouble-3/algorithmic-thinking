@@ -53,8 +53,8 @@ The book describes BFS as a shortest-path tool for the appropriate unweighted se
 ```text
 algorithmic-thinking/
 ├── .github/                  # CI + contribution templates
-├── benchmarks/               # reproducible benchmark entry point
-├── docs/                     # architecture, complexity, roadmap, learning log
+├── benchmarks/               # generated workloads + benchmark runner
+├── docs/                     # architecture, diagrams, complexity, roadmap, learning log
 ├── examples/                 # small runnable demonstrations
 ├── include/                  # public C headers
 ├── problems/                 # original practice problem statements
@@ -119,7 +119,7 @@ The benchmark plan is intentionally conservative: timings are machine-dependent,
 make benchmark
 ```
 
-See [`benchmarks/README.md`](benchmarks/README.md).
+See [`benchmarks/README.md`](benchmarks/README.md) and [`docs/diagrams.md`](docs/diagrams.md).
 
 ## Learning log
 
@@ -135,6 +135,10 @@ The most portfolio-relevant part is the reasoning record. For each chapter, writ
 Template: [`docs/learning-log.md`](docs/learning-log.md)
 
 Progress tracker: [`docs/progress.md`](docs/progress.md)
+
+Portfolio notes: [`docs/portfolio.md`](docs/portfolio.md)
+
+Contribution guide: [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ## What makes this portfolio-friendly
 
