@@ -7,3 +7,7 @@ algorithmic_thinking_demo
 .DS_Store
 .vscode/
 .idea/
+
+# Local benchmark/sanitizer builds
+build-bench/
+build-sanitize/
