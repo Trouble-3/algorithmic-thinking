@@ -11,7 +11,7 @@ flowchart TD
     C -- No --> D[Pop vertex u]
     D --> E[Inspect neighbors of u]
     E --> F{Neighbor visited?}
-    F -- No --> G[Set distance = dist[u] + 1]
+    F -- No --> G["Set distance = dist[u] + 1"]
     G --> H[Push neighbor]
     H --> E
     F -- Yes --> E
@@ -25,7 +25,7 @@ Invariant: when a vertex is first discovered, its BFS distance is the minimum nu
 
 ```mermaid
 flowchart TD
-    A[Initialize dist[source] = 0] --> B[Push source into min-heap]
+    A["Initialize dist[source] = 0"] --> B[Push source into min-heap]
     B --> C{Heap empty?}
     C -- No --> D[Pop smallest tentative distance]
     D --> E{Entry stale?}
@@ -46,13 +46,13 @@ Invariant: a non-stale minimum-distance entry is the next vertex whose shortest 
 
 ```mermaid
 flowchart LR
-    A[find(x)] --> B{parent[x] == x?}
+    A["find(x)"] --> B{"parent[x] == x?"}
     B -- Yes --> C[Return root]
     B -- No --> D[Find parent root]
     D --> E[Compress path]
     E --> C
 
-    F[union(a,b)] --> G[Find roots]
+    F["union(a,b)"] --> G[Find roots]
     G --> H{Same root?}
     H -- Yes --> I[No change]
     H -- No --> J[Attach smaller tree to larger tree]
@@ -70,7 +70,7 @@ flowchart TD
     D -- Yes --> E[Return -infinity]
     D -- No --> F[Query left child]
     F --> G[Query right child]
-    G --> H[Return max(left,right)]
+    G --> H["Return max(left,right)"]
 ```
 
 Invariant: every tree node stores the maximum value of its represented interval.
