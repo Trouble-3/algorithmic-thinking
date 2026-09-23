@@ -136,8 +136,6 @@ Template: [`docs/learning-log.md`](docs/learning-log.md)
 
 Progress tracker: [`docs/progress.md`](docs/progress.md)
 
-Portfolio notes: [`docs/portfolio.md`](docs/portfolio.md)
-
 Contribution guide: [`CONTRIBUTING.md`](CONTRIBUTING.md)
 
 ## What makes this portfolio-friendly
