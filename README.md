@@ -73,7 +73,26 @@ algorithmic-thinking/
 │   ├── complexity.md
 │   └── roadmap.md
 ├── examples/
-│   └── demo.c
+│   ├── demo.c
+│   └── chapter_demo.c
+├── problems/
+│   ├── 01-hash-tables.md
+│   ├── 02-trees-recursion.md
+│   ├── 03-dp.md
+│   ├── 04-bfs.md
+│   ├── 05-dijkstra.md
+│   ├── 06-binary-search.md
+│   ├── 07-heaps-segment-trees.md
+│   └── 08-union-find.md
+├── solutions/
+│   ├── 01-duplicate-detector/
+│   ├── 02-tree-aggregate/
+│   ├── 03-min-coins/
+│   ├── 04-bfs-distances/
+│   ├── 05-dijkstra/
+│   ├── 06-first-feasible/
+│   ├── 07-range-max/
+│   └── 08-dynamic-communities/
 ├── include/
 │   ├── binary_search.h
 │   ├── dijkstra.h
@@ -161,6 +180,7 @@ A useful way to turn this repository into a portfolio is to keep the code stable
 - [x] Complexity notes
 - [x] Chapter-by-chapter roadmap
 - [x] Original practice problems
+- [x] Eight runnable chapter solutions
 - [x] Runnable examples
 - [ ] Add measured benchmark results from your own machine
 - [ ] Add your own solution notes / learning log
