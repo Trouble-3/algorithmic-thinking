@@ -31,3 +31,6 @@ add_test(NAME algorithmic_thinking_tests COMMAND algorithmic_thinking_tests)
 
 add_executable(algorithmic_thinking_demo examples/demo.c)
 target_link_libraries(algorithmic_thinking_demo PRIVATE algorithms)
+
+add_executable(chapter_demo examples/chapter_demo.c)
+target_link_libraries(chapter_demo PRIVATE algorithms)
