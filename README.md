@@ -1,5 +1,11 @@
 # Algorithmic Thinking — C Companion
 
+[![CI](https://github.com/OWNER/algorithmic-thinking/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/algorithmic-thinking/actions/workflows/ci.yml)
+[![C11](https://img.shields.io/badge/C-C11-blue)](#build)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
+> A structured C practice repository for algorithmic thinking, data structures, and problem solving.
+
 A clean, testable C project inspired by the structure and problem-solving themes of Daniel Zingaro's *Algorithmic Thinking: A Problem-Based Introduction*.
 
 The book is organized around eight core chapters: hash tables; trees and recursion; memoization and dynamic programming; graphs and breadth-first search; shortest paths in weighted graphs; binary search; heaps and segment trees; and union-find. This repository follows that same progression while using original implementations and examples.
@@ -9,6 +15,9 @@ The book is organized around eight core chapters: hash tables; trees and recursi
 > This repository is an independent companion project. It does not reproduce the book's text or source code.
 
 ## Chapters
+
+The repository follows the book's eight-chapter progression: Hash Tables; Trees and Recursion; Memoization and Dynamic Programming; Graphs and Breadth-First Search; Shortest Paths in Weighted Graphs; Binary Search; Heaps and Segment Trees; and Union-Find. fileciteturn3file0L1-L7
+
 
 | # | Topic | Main implementation |
 |---|---|---|
@@ -110,6 +119,52 @@ test(graph): cover unreachable BFS nodes
 docs(dp): explain top-down vs bottom-up
 refactor(heap): isolate sift-down operation
 ```
+
+## Problems
+
+Each chapter now has a small original practice problem in `problems/`. They are deliberately shorter than full competitive-programming statements so the repository stays focused on algorithmic thinking.
+
+## Quality checks
+
+Run the normal test suite with CMake:
+
+```bash
+cmake -S . -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+For AddressSanitizer and UndefinedBehaviorSanitizer:
+
+```bash
+./scripts/sanitize.sh
+```
+
+## Learning log
+
+A useful way to turn this repository into a portfolio is to keep the code stable while recording what changed in your thinking:
+
+- What was the naive approach?
+- What operation was too slow?
+- Which data structure or algorithm changed the bottleneck?
+- What invariant makes the implementation correct?
+- What is the expected complexity?
+- What test case would break a careless implementation?
+
+## Portfolio checklist
+
+- [x] C11 implementation
+- [x] Unit/integration-style tests
+- [x] CMake build
+- [x] GitHub Actions CI
+- [x] Sanitizer script
+- [x] Complexity notes
+- [x] Chapter-by-chapter roadmap
+- [x] Original practice problems
+- [x] Runnable examples
+- [ ] Add measured benchmark results from your own machine
+- [ ] Add your own solution notes / learning log
+- [ ] Replace `OWNER` in README badges with your GitHub username
 
 ## License
 
